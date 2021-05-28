@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todolist</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="images/favicon.ico" rel="shortcut icon">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/regular.js" integrity="sha384-t7yHmUlwFrLxHXNLstawVRBMeSLcXTbQ5hsd0ifzwGtN7ZF7RZ8ppM7Ldinuoiif" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body class="bg-lighter">
+    <div id="app">
+        <div class="top"></div>       
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+          </div>
+          <div class="wrap">
+            
+          </div>
+          <input type="text" class="form-control" placeholder="今天有什麼計畫?" v-model="newtodo" @keyup.enter="addTodo()">
+          <div class="input-group-append">
+            <button class="btn btn-primary" type="button" @click="addTodo()">新增</button>
+          </div>
+        </div>
+        <div class="card text-center">
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+              <li class="nav-item">
+                <a class="nav-link" :class="{'active':status=='all'}" @click="status='all'" href="#">全部</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" :class="{'active':status=='active'}" @click="status='active'" href="#">進行中</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" :class="{'active':status=='done'}" @click="status='done'"  href="#">已完成</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="list-group list-group-flush text-left">
+            <li class="list-group-item" v-for="(item,key) in filitertodos" @dblclick="edit(item)">
+              <div class="d-flex" v-if="catchtodo.id != item.id">
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" :id="item.id" v-model="item.completed">
+                  <label class="form-check-label" :for="item.id" :class="{'completed':item.completed}"><span></span><p class="time"> {{item.time}} </p>
+                    {{item.title}}
+                  </label>
+                </div>
+                <button type="button" class="close ml-auto" aria-label="Close" @click="removetodo(item)">
+                  <i class="fas fa-trash-alt"></i>
+                </button>
+              </div>
+              <input type="text" class="form-control"  v-if="catchtodo.id == item.id"     @keyup.esc="canceledit()" v-model="catchtitle" @keyup.enter="doneedit(item)">
+            </li>
+          </ul>
+          <div class="card-footer d-flex justify-content-between">
+            <span>還有 {{undoneTodos.length}} 筆任務未完成</span>
+            <a href="#" @click="clear()">清除所有任務</a>
+          </div>
+        </div>
+      </div>
+      <div class="fix">
+        <label for="toggle" class="normal" >🦖</label>
+        <input type="checkbox" class="toggle">
+        </label>
+      </div>
+      <script src="todolist.js"></script>
+</body>
+</html>

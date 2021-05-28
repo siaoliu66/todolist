@@ -1,0 +1,122 @@
+.completed {
+    text-decoration: line-through;
+    color: gray
+  }
+  
+  
+  
+  body{
+    width: 100%;
+    font-family: '微軟正黑體';
+    input[type="checkbox"] + label p{
+        display:inline-block;
+        cursor: pointer;
+        margin: 0px 10px;
+        letter-spacing: 1px;
+        font-size: 9px;
+      }  
+  }
+  
+  .bg{
+      height: 500px;
+      border: 1px solid black;
+      margin: 10px;
+  }
+  .black{
+      background-color: #343a40;
+    .top{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .user{
+        h1{
+          font-size: 1.5em;
+          margin: 0 0 0 10px;
+          padding: 0;
+          width: 10em;
+          border-right: .05em solid;
+          overflow: hidden;
+          white-space: nowrap;
+          animation: typing 3s steps(10),insert 1s steps(1) infinite;
+          color: #00CACA;;
+        }
+      } 
+      .today{
+        text-align: right;
+        color: #00CACA;
+        letter-spacing: 2px;
+        font-size: 14px;
+        padding-right: 10px;
+        p{
+          margin: 5px;
+        }
+      }
+    }
+    .form-check{
+      input[type="checkbox"] {
+        display:none;
+      }
+      
+      input[type="checkbox"] + label span {
+          display:inline-block;
+          width:24px;
+          height:24px;
+          margin: 0 15px 0 0;
+          vertical-align:middle;
+          background:url(https://i.imgur.com/bZM5Itd.png) left top no-repeat;
+          cursor:pointer;
+        }
+        input[type="checkbox"]:checked + label span { background:url(https://i.imgur.com/Ao2vr7G.png)  top no-repeat;
+        }
+    }
+    .normal,.sup{
+      color: white
+    }
+  }
+  
+  .fix{
+   position: fixed;
+   bottom: 1%; 
+   right: 1%;
+   display: flex;
+    .toggle{
+      // margin: 10px;
+      outline: none;
+      appearance: none;
+      position: relative;				
+      width: 50px;								
+      height: 25px;								
+      border-radius: 50px;			
+      border: 1px solid #ccc;
+      background-color: #ccc;
+      &::after{
+        content: '';
+        display: inline-box;
+        width: 23px;
+        height: 23px;
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;	
+        top: 0;
+        left: 0;
+        box-shadow: 0 0 2px #999;
+        transition: left 0.1s linear;
+      }
+      &:checked{
+        background-color: #32BA58;
+        &::after{
+          position: absolute;	
+          top: 0;
+          left: 50%;
+          // transform: translate(-50%);
+        }
+      }
+    }
+    .normal,.sup{
+      margin: 0 10px;
+      line-height:25px;
+    }
+  }
+  #app{
+    padding: 10px;
+  }

@@ -126,11 +126,6 @@ $(".toggle").click(function() {
      $('.top').children().remove()
    }
 });
-// function myrefresh()
-// {
-//    history.go(0);
-// }
-// setTimeout('myrefresh()',1000*60*60); //指定1小時重新整理一次
 
 //倒數
 // var timer;     
@@ -151,5 +146,6 @@ $(".toggle").click(function() {
 // $(document).ready(function(){  
 //     timer = setInterval("CountDown()",1000);      
 // });  
+
 console.log('那還你一個愛心❤️\n只要確定自己是往前進的，這條路最後是到哪裡已經不重要了。\n當你能力累積夠了，自然就會知道自己下一步該怎麼走 :) ')
 console.log("ru42k6jco6x96.4")

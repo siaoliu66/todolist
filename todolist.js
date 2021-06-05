@@ -1,4 +1,4 @@
-console.clear()
+
 var time = new Date()
 var day_list = ['日', '一', '二', '三', '四', '五', '六'];
 var today = `${time.getFullYear()}.${time.getMonth()+1}.${time.getDate()}(${day_list[time.getDay()]})`
@@ -147,5 +147,5 @@ $(".toggle").click(function() {
 //     timer = setInterval("CountDown()",1000);      
 // });  
 
-console.log('那還你一個愛心❤️\n只要確定自己是往前進的，這條路最後是到哪裡已經不重要了。\n當你能力累積夠了，自然就會知道自己下一步該怎麼走 :) ')
-console.log("ru42k6jco6x96.4")
+console.log('給你愛心❤️希望妳開心的時候可以常常笑，如果是不開心也可以快點過去')
+console.log("一直很想偷偷說 每次心情不好都特別想見妳 雖然心情不好大多都是因為妳XD")

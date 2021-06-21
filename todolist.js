@@ -114,7 +114,7 @@ $(".toggle").click(function() {
      $('body').addClass('black')
      $('.top').append(`<div class="user">
     <h1>
-      安安！ 螃蟹芋頭萱♥
+      喜歡波克比的人♥
     </h1>
   </div>
   <div class="today">
@@ -148,4 +148,5 @@ $(".toggle").click(function() {
 // });  
 
 console.log('給你愛心❤️希望妳開心的時候可以常常笑，如果是不開心也可以快點過去')
+console.log("想陪你一起面對，但才發現我好像沒什麼信心，所以我只能在不安的時候ㄊㄅㄉㄒㄊㄅㄒㄋ")
 console.log("如果是值得的，那晚一點來真的沒關係")

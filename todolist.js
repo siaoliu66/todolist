@@ -114,12 +114,12 @@ $(".toggle").click(function() {
      $('body').addClass('black')
      $('.top').append(`<div class="user">
     <h1>
-      喜歡波克比的人♥
+      尋找快樂的人?♥
     </h1>
   </div>
   <div class="today">
     <p> ${today} </p>
-    <p>你要知道擁有你的人會很幸福♥</p>
+    <p>你要知道你笑起來很可愛♥</p>
   </div>`)
    } else {
      $('body').removeClass('black') 
@@ -147,7 +147,6 @@ $(".toggle").click(function() {
 //     timer = setInterval("CountDown()",1000);      
 // });  
 
-console.log('給你愛心❤️希望妳開心的時候可以常常笑，如果是不開心也可以快點過去')
-console.log("想陪你一起面對，但才發現我好像沒什麼信心，所以我只能在不安的時候特別擔心特別想你XD")
-console.log("今天是頭腦不清楚的禮拜一 希望我們話說完之後 你還會讓我繼續陪你")
+console.log('謝謝你還在阿，對不起是我好像跑太快惹拉XD')
+console.log('所以你慢慢地調整步伐，我也會好好地跟在你後面')
 console.log("如果是值得的，那晚一點來真的沒關係")

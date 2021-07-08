@@ -114,12 +114,12 @@ $(".toggle").click(function() {
      $('body').addClass('black')
      $('.top').append(`<div class="user">
     <h1>
-      尋找快樂的人?♥
+      尋找快樂的人♥
     </h1>
   </div>
   <div class="today">
     <p> ${today} </p>
-    <p>你要知道你笑起來很可愛♥</p>
+    <p>喜歡笑的人運氣通常不會太差♥</p>
   </div>`)
    } else {
      $('body').removeClass('black') 
@@ -147,6 +147,7 @@ $(".toggle").click(function() {
 //     timer = setInterval("CountDown()",1000);      
 // });  
 
-console.log('謝謝你還在阿，對不起是我好像跑太快惹拉XD')
-console.log('所以你慢慢地調整步伐，我也會好好地跟在你後面')
+console.log('覺得很難的時候就告訴自己，值得的都不會太容易')
+console.log('即使你面向陽光，陰影未必會消失，只是在背後，你要選擇視而不見，持續前進')
+
 console.log("如果是值得的，那晚一點來真的沒關係")

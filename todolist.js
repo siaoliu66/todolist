@@ -112,15 +112,15 @@ localStorage.setItem('stared',JSON.stringify(this.storageArray))
 $(".toggle").click(function() {
    if($(".toggle").prop("checked")) {
      $('body').addClass('black')
-     $('.top').append(`<div class="user">
-    <h1>
-      尋找快樂的人♥
-    </h1>
-  </div>
-  <div class="today">
-    <p> ${today} </p>
-    <p>喜歡笑的人運氣通常不會太差♥</p>
-  </div>`)
+  //    $('.top').append(`<div class="user">
+  //   <h1>
+  //     尋找快樂的人♥
+  //   </h1>
+  // </div>
+  // <div class="today">
+  //   <p> ${today} </p>
+  //   <p>喜歡笑的人運氣通常不會太差♥</p>
+  // </div>`)
    } else {
      $('body').removeClass('black') 
      $('.top').children().remove()
@@ -147,7 +147,7 @@ $(".toggle").click(function() {
 //     timer = setInterval("CountDown()",1000);      
 // });  
 
-console.log('覺得很難的時候就告訴自己，值得的都不會太容易')
-console.log('生命中會有些人像是太陽般的存在，不只是照亮自己，更是看照著自己。')
-console.log('ㄒㄨ一一ㄊ，ㄨ一ㄎ一ㄔㄨㄓ一ㄗㄉㄖ😎')
-console.log("如果是值得的，那晚一點來真的沒關係")
+// console.log('覺得很難的時候就告訴自己，值得的都不會太容易')
+// console.log('生命中會有些人像是太陽般的存在，不只是照亮自己，更是看照著自己。')
+
+// console.log("如果是值得的，那晚一點來真的沒關係")

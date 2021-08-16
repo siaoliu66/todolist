@@ -19,19 +19,17 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
-<body class="bg-lighter">
+<body class="bg-lighter black">
     <div id="app">
          
         <div class="container">
           <div class="top"></div>  
-          <div class="input-group mb-3">
+          <div class="input-group mb-3"  style="align-items: center;">
           <div class="input-group-prepend">
           </div>
-          <div class="wrap">
-            
-          </div>
-          <input type="text" class="form-control" placeholder="今天有什麼計畫?" v-model="newtodo" @keyup.enter="addTodo()">
-          <div class="input-group-append">
+          <img src="https://pic.cr173.com/up/2017-8/15026815436236051.gif" alt="" style="width: 60px;">
+          <input type="text" class="form-control" placeholder="小可愛今天要槓麻?" v-model="newtodo" @keyup.enter="addTodo()">
+          <div class="input-group-append"  style="height: 38px;">
             <button class="btn btn-primary" type="button" @click="addTodo()">新增</button>
           </div>
         </div>
@@ -73,10 +71,10 @@
         </div>    
         
       </div>
-      <div class="fix">
+      <!-- <div class="fix">
         <input type="checkbox" class="toggle">
         </label>
-      </div>
+      </div> -->
       <script src="todolist.js"></script>
 </body>
 </html>

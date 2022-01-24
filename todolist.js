@@ -147,9 +147,6 @@ $(".toggle").click(function() {
 //     timer = setInterval("CountDown()",1000);      
 // });  
 
-console.log('覺得很難的時候就告訴自己，值得的都不會太容易')
-console.log("如果是值得的，那晚一點來沒關係")
-console.log('說好要一起好好的，所以也希望以後每次的見面每次的相處都會是輕鬆的開心的(´･∀･`)')
-console.log('雖然工作跟家裡的事情很多，但要記得找時間休息，不准太累')
-console.log('相信不好的那些都會過去也都會變成未來的養分，既然沒辦法忘記那我陪你一起承擔一起共存吧')
-console.log('ㄐㄉㄨㄏㄧㄓㄒㄓㄋ❤️')
+
+console.log("晚一點沒關係")
+console.log("記得好好照顧自己，放心休息。")

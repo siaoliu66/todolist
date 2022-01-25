@@ -24,7 +24,7 @@ body input[type="checkbox"] + label p {
 }
 
 .black {
-  background-color: #343a40;
+  background-color: #f9d27d;
 }
 
 .black .top {
@@ -70,8 +70,8 @@ body input[type="checkbox"] + label p {
 
 .black .form-check input[type="checkbox"] + label span {
   display: inline-block;
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   margin: 0 15px 0 0;
   vertical-align: middle;
   background: url(https://i.imgur.com/bZM5Itd.png) left top no-repeat;
@@ -79,7 +79,8 @@ body input[type="checkbox"] + label p {
 }
 
 .black .form-check input[type="checkbox"]:checked + label span {
-  background: url(https://i.imgur.com/Ao2vr7G.png) top no-repeat;
+  background: url(./image/clickgif.gif) top no-repeat;
+  background-size: cover;
 }
 
 .black .normal, .black .sup {
@@ -90,57 +91,48 @@ body input[type="checkbox"] + label p {
   position: fixed;
   bottom: 1%;
   right: 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .fix .toggle {
   outline: none;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   position: relative;
-  width: 70px;
-  height: 35px;
+  width: 50px;
+  height: 25px;
   border-radius: 50px;
   border: 1px solid #ccc;
   background-color: #ccc;
 }
-.fix .toggle::before {
-  content: '';
-  width: 30px;
-  height: 33px;
-  background-image: url('https://1.bp.blogspot.com/-UL0DHMmIgpM/XsMwcaDZJ_I/AAAAAAAM6j4/PHPwuJGHXXgrwihBNeLLxY1jxgU4PrTpgCLcBGAsYHQ/s1600/AS0006761_00.gif');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  position: absolute;
-  top: 0px;
-  left: 3px;
-}
+
 .fix .toggle::after {
   content: '';
-  width: 29px;
-  height: 29px;
+  display: inline-box;
+  width: 23px;
+  height: 23px;
   background-color: #fff;
   border-radius: 50%;
   position: absolute;
-  top: 2px;
-  right: 3px;
-  box-shadow: 0 0 2px #999;
+  top: 0;
+  left: 0;
+  -webkit-box-shadow: 0 0 2px #999;
+          box-shadow: 0 0 2px #999;
+  -webkit-transition: left 0.1s linear;
   transition: left 0.1s linear;
 }
 
 .fix .toggle:checked {
   background-color: #32BA58;
 }
-.fix .toggle:checked::before {
-  position: absolute;
-  background-image: url('https://stickershop.line-scdn.net/stickershop/v1/sticker/78960401/iPhone/sticker@2x.png;compress=true');
-  top: 0;
-  left: 50%;
-  /* transition: right 0.1s linear; */
-}
+
 .fix .toggle:checked::after {
   position: absolute;
-  right: 50%;
+  top: 0;
+  left: 50%;
 }
 
 .fix .normal, .fix .sup {

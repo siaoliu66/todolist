@@ -8,6 +8,7 @@
   body{
     width: 100%;
     font-family: '微軟正黑體';
+    
     input[type="checkbox"] + label p{
         display:inline-block;
         cursor: pointer;
@@ -23,7 +24,7 @@
       margin: 10px;
   }
   .black{
-      background-color: #343a40;
+    background-color: #f9d27d;
     .top{
       display: flex;
       align-items: center;
@@ -59,14 +60,16 @@
       
       input[type="checkbox"] + label span {
           display:inline-block;
-          width:24px;
-          height:24px;
+          width: 30px;
+          height:30px;
           margin: 0 15px 0 0;
           vertical-align:middle;
           background:url(https://i.imgur.com/bZM5Itd.png) left top no-repeat;
           cursor:pointer;
         }
-        input[type="checkbox"]:checked + label span { background:url(https://i.imgur.com/Ao2vr7G.png)  top no-repeat;
+        input[type="checkbox"]:checked + label span { 
+          background:url(./image/clickgif.gif)  top no-repeat;
+          background-size: cover;
         }
     }
     .normal,.sup{

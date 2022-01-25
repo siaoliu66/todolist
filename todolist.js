@@ -148,6 +148,8 @@ $(".toggle").click(function() {
 // });  
 
 
-console.log("晚一點沒關係")
-console.log("記得好好照顧自己，放心休息。")
+console.log("只要是你，晚一點沒關係")
+console.log("嘿，不知道你最近還會不會看，好一陣子沒幫你更新換換心情了")
+console.log("就放心好好休息，不管怎樣先讓自己找到舒服的樣子")
+console.log("雖然看起來多愁善感，但要記得自己很可愛")
 console.log("一切會慢慢變好的 一定。")

@@ -150,3 +150,4 @@ $(".toggle").click(function() {
 
 console.log("晚一點沒關係")
 console.log("記得好好照顧自己，放心休息。")
+console.log("一切會慢慢變好的 一定。")

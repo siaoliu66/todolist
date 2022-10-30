@@ -149,7 +149,11 @@ $(".toggle").click(function() {
 
 
 console.log("只要是你，晚一點沒關係")
-console.log("嘿，不知道你最近還會不會看，好一陣子沒幫你更新換換心情了")
-console.log("就放心好好休息，不管怎樣先讓自己找到舒服的樣子")
-console.log("雖然看起來多愁善感，但要記得自己很可愛")
-console.log("一切會慢慢變好的 一定。")
+console.log("嘿雖然看到的時候已經過了生日了吧")
+console.log("本來是有打算幫你換點不一樣的")
+console.log("但因為最近真的頗忙的只好先更新字了")
+console.log("我相信 也知道你一定可以")
+console.log("盡力的成為自己想要的模樣")
+console.log("但路一定會有點難走也不要太過於苛責自己")
+console.log("雖然不一定每件事情都能如願以償")
+console.log("大不了我們就改變路線吧 反正不管如何 我都會想陪著你走")

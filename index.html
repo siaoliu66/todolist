@@ -27,13 +27,13 @@
           <div class="input-group mb-3"  style="align-items: center;">
           <div class="input-group-prepend">
           </div>
-          <img src="./image/giphy.gif" alt="" style="width: 100px;">
-          <input type="text" class="form-control" placeholder="🤍💛💚" v-model="newtodo" @keyup.enter="addTodo()">
+          <img src="./image/AS0004566_09.gif" alt="" style="width: 100px;">
+          <input type="text" class="form-control" placeholder="辛苦了~要做的事情很多拔，趕快記錄下來" v-model="newtodo" @keyup.enter="addTodo()">
           <div class="input-group-append"  style="height: 38px;">
-            <button class="btn btn-primary" type="button" @click="addTodo()">新增</button>
+            <button class="btn btn-dark" type="button" @click="addTodo()">新增</button>
           </div>
         </div>
-        <div class="card text-center">
+        <div class="card text-center bg-dark">
           <div class="card-header">
             <ul class="nav nav-tabs card-header-tabs">
               <li class="nav-item">
@@ -63,7 +63,7 @@
               <input type="text" class="form-control"  v-if="catchtodo.id == item.id"     @keyup.esc="canceledit()" v-model="catchtitle" @keyup.enter="doneedit(item)">
             </li>
           </ul>
-          <div class="card-footer d-flex justify-content-between">
+          <div class="card-footer d-flex justify-content-between text-light">
             <span>還有 {{undoneTodos.length}} 筆任務未完成</span>
             <a href="#" @click="clear()">清除所有任務</a>
           </div>

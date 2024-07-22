@@ -6,15 +6,14 @@
 
 body {
   width: 100%;
-  font-family: '微軟正黑體';
+  font-family: "微軟正黑體";
 }
-
-body input[type="checkbox"] + label p {
+body input[type=checkbox] + label p {
   display: inline-block;
   cursor: pointer;
   margin: 0px 10px;
   letter-spacing: 1px;
-  font-size: 9px;
+  font-size: 12px;
 }
 
 .bg {
@@ -24,34 +23,28 @@ body input[type="checkbox"] + label p {
 }
 
 .black {
-  background-color: #EAA49F;
+  background-position: center;
+  background-image: url(https://images.pexels.com/photos/2546943/pexels-photo-2546943.jpeg?auto=compress&cs=tinysrgb&w=600);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
-
 .black .top {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
-
 .black .top .user h1 {
   font-size: 1.5em;
   margin: 0 0 0 10px;
   padding: 0;
   width: 10em;
-  border-right: .05em solid;
+  border-right: 0.05em solid;
   overflow: hidden;
   white-space: nowrap;
-  -webkit-animation: typing 3s steps(10), insert 1s steps(1) infinite;
-          animation: typing 3s steps(10), insert 1s steps(1) infinite;
+  animation: typing 3s steps(10), insert 1s steps(1) infinite;
   color: #00CACA;
 }
-
 .black .top .today {
   text-align: right;
   color: #00CACA;
@@ -59,30 +52,27 @@ body input[type="checkbox"] + label p {
   font-size: 14px;
   padding-right: 10px;
 }
-
 .black .top .today p {
   margin: 5px;
 }
-
-.black .form-check input[type="checkbox"] {
+.black .form-check input[type=checkbox] {
   display: none;
 }
-
-.black .form-check input[type="checkbox"] + label span {
+.black .form-check input[type=checkbox] + label span {
   display: inline-block;
   width: 30px;
   height: 30px;
   margin: 0 15px 0 0;
   vertical-align: middle;
-  background: url(https://i.imgur.com/bZM5Itd.png) left top no-repeat;
+  background: url(./image/checkbox.png) left top no-repeat;
+  background-size: contain;
   cursor: pointer;
+  background-position: center;
 }
-
-.black .form-check input[type="checkbox"]:checked + label span {
+.black .form-check input[type=checkbox]:checked + label span {
   background: url(./image/clickgif.gif) top no-repeat;
   background-size: cover;
 }
-
 .black .normal, .black .sup {
   color: white;
 }
@@ -91,11 +81,8 @@ body input[type="checkbox"] + label p {
   position: fixed;
   bottom: 1%;
   right: 1%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .fix .toggle {
   outline: none;
   -webkit-appearance: none;
@@ -108,9 +95,8 @@ body input[type="checkbox"] + label p {
   border: 1px solid #ccc;
   background-color: #ccc;
 }
-
 .fix .toggle::after {
-  content: '';
+  content: "";
   display: inline-box;
   width: 23px;
   height: 23px;
@@ -119,22 +105,17 @@ body input[type="checkbox"] + label p {
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-box-shadow: 0 0 2px #999;
-          box-shadow: 0 0 2px #999;
-  -webkit-transition: left 0.1s linear;
+  box-shadow: 0 0 2px #999;
   transition: left 0.1s linear;
 }
-
 .fix .toggle:checked {
   background-color: #32BA58;
 }
-
 .fix .toggle:checked::after {
   position: absolute;
   top: 0;
   left: 50%;
 }
-
 .fix .normal, .fix .sup {
   margin: 0 10px;
   line-height: 25px;
@@ -142,5 +123,4 @@ body input[type="checkbox"] + label p {
 
 #app {
   padding: 10px;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -33,7 +33,7 @@
             <button class="btn btn-dark" type="button" @click="addTodo()">新增</button>
           </div>
         </div>
-        <div class="card text-center bg-dark">
+        <div class="card text-center">
           <div class="card-header">
             <ul class="nav nav-tabs card-header-tabs">
               <li class="nav-item">
@@ -52,7 +52,7 @@
               <div class="d-flex" v-if="catchtodo.id != item.id">
                 <div class="form-check">
                   <input type="checkbox" class="form-check-input" :id="item.id" v-model="item.completed">
-                  <label class="form-check-label" :for="item.id" :class="{'completed':item.completed}"><span></span><p class="time"> {{item.time}} </p>
+                  <label class="form-check-label" :for="item.id" :class="{'completed':item.completed}"><span></span><p class="time badge badge-warning"> {{item.time}} </p>
                     {{item.title}}
                   </label>
                 </div>

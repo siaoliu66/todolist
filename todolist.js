@@ -128,32 +128,28 @@ $(".toggle").click(function() {
 });
 
 //倒數
-// var timer;     
-// function CountDown(){     
-//         if(maxtime>=0){    
+var timer;     
+function CountDown(){     
+        if(maxtime>=0){    
 // console.log(maxtime)
-//             if(maxtime !=0){   
-//                 --maxtime;     
-//             }else{     
-//               alert('520快樂❤️如果沒人跟你說那我跟你說\n我才不是要你給我什麼答案，但你要知道擁有你的人會很幸福♥\n所以繼續尋找你的答案吧～不過我還是會享受追著你跑的感覺👻\n提示到爆掉的不驚喜限定版驚喜')
-//                 clearInterval(timer);     
-//             }     
-//         }         
-// }  
-// var begindate=new Date();//開始日期  
-// var enddate=new Date(2021, 4, 20,17,20)//結束日期  
-// var maxtime = Math.round((enddate.getTime() - begindate.getTime())/1000); 
-// $(document).ready(function(){  
-//     timer = setInterval("CountDown()",1000);      
-// });  
+            if(maxtime !=0){   
+                --maxtime;     
+            }else{     
+              alert('不是每次都捨得讓妳離開 但還是希望妳可以過的舒服一點\n所以不是委屈 而是希望我們的關係可以更加穩固\n互相遷就可以走得很遠 雙向奔赴才有意義\n我心疼你的不容易 妳明白我的寡言\n我想寵妳像個小公主 讓妳知道我滿眼都是妳的人\n所以我願意 一直這麼等妳。')
+                clearInterval(timer);     
+            }     
+        }         
+}  
+var begindate=new Date();//開始日期  
+var enddate=new Date(2024, 7, 14,10,31)//結束日期  
+var maxtime = Math.round((enddate.getTime() - begindate.getTime())/1000); 
+$(document).ready(function(){  
+    timer = setInterval("CountDown()",1000);     
+    if(begindate>enddate && begindate.getDate()=='14'&& begindate.getMonth()=='7'){
+        alert('雖然每個14號都是情人節，但希望未來的每一天都可以讓妳過~\n但這是限定今日不知道姊姊會不會看到XD\n快按F12去找找今日份快樂♡')
+    } 
+});   
 
 
 console.log("只要是你，晚一點沒關係")
-console.log("嘿雖然看到的時候已經過了生日了吧")
-console.log("本來是有打算幫你換點不一樣的")
-console.log("但因為最近真的頗忙的只好先更新字了")
-console.log("我相信 也知道你一定可以")
-console.log("盡力的成為自己想要的模樣")
-console.log("但路一定會有點難走也不要太過於苛責自己")
-console.log("雖然不一定每件事情都能如願以償")
-console.log("大不了我們就改變路線吧 反正不管如何 我都會想陪著你走")
+console.log('不是每次都捨得讓妳離開 但還是希望妳可以過的舒服一點\n所以不是委屈 而是希望我們的關係可以更加穩固\n互相遷就可以走得很遠 雙向奔赴才有意義\n我心疼你的不容易 妳明白我的寡言\n我想寵妳像個小公主 讓妳知道我滿眼都是妳的人\n所以我願意 一直這麼等妳。')

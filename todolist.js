@@ -148,12 +148,7 @@ $(".toggle").click(function() {
 // });  
 
 
-console.log("只要是你，晚一點沒關係")
-console.log("嘿雖然看到的時候已經過了生日了吧")
-console.log("本來是有打算幫你換點不一樣的")
-console.log("但因為最近真的頗忙的只好先更新字了")
-console.log("我相信 也知道你一定可以")
-console.log("盡力的成為自己想要的模樣")
-console.log("但路一定會有點難走也不要太過於苛責自己")
-console.log("雖然不一定每件事情都能如願以償")
-console.log("大不了我們就改變路線吧 反正不管如何 我都會想陪著你走")
+console.log("不管之後會遇到多少奇怪的事情，我都會想陪著你走完")
+console.log("木頭直男 學姊狗狗 哥哥 都是學姊限定版")
+console.log("不用擔心我會對別人開特例 因為我雙眼都只有妳 沒有別人")
+console.log("就算有人會冒出來打擾，妳永遠是學妹拒絕別人的唯一理由。")

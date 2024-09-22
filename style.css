@@ -27,7 +27,6 @@ body input[type=checkbox] + label p {
   background-image: url(https://images.pexels.com/photos/2546943/pexels-photo-2546943.jpeg?auto=compress&cs=tinysrgb&w=600);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
 }
 .black .top {
   display: flex;
@@ -76,49 +75,15 @@ body input[type=checkbox] + label p {
 .black .normal, .black .sup {
   color: white;
 }
-
-.fix {
-  position: fixed;
-  bottom: 1%;
-  right: 1%;
-  display: flex;
+.black .card {
+  opacity: 0.8;
 }
-.fix .toggle {
-  outline: none;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  position: relative;
-  width: 50px;
-  height: 25px;
-  border-radius: 50px;
-  border: 1px solid #ccc;
-  background-color: #ccc;
+.black .sortable1 .list-group-item {
+  cursor: pointer;
 }
-.fix .toggle::after {
-  content: "";
-  display: inline-box;
-  width: 23px;
-  height: 23px;
-  background-color: #fff;
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  box-shadow: 0 0 2px #999;
-  transition: left 0.1s linear;
-}
-.fix .toggle:checked {
-  background-color: #32BA58;
-}
-.fix .toggle:checked::after {
-  position: absolute;
-  top: 0;
-  left: 50%;
-}
-.fix .normal, .fix .sup {
-  margin: 0 10px;
-  line-height: 25px;
+.black .blue-background-class {
+  opacity: 0.5;
+  background: #ec9bad;
 }
 
 #app {

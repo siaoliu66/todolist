@@ -89,9 +89,15 @@ localStorage.setItem('stared',JSON.stringify(this.storageArray))
       return this.storageArray.filter(todo =>todo.completed != true);
     },
     barWidth: function(){
-      var untodo = this.storageArray.filter(todo =>todo.completed != true)
+      var untodo = this.storageArray.filter(todo =>todo.completed === true)
       var todo = this.storageArray
-      return (untodo.length) / (todo.length)
+
+      if ((untodo.length/todo.length)>=0){
+        return Math.round((untodo.length) / (todo.length) *100 ) + '%'
+      }else{
+        return '0%'
+      }
+      
     }
   },
   mounted:function(){
@@ -101,7 +107,6 @@ localStorage.setItem('stared',JSON.stringify(this.storageArray))
     }else{
         this.storageArray = JSON.parse(localStorage.getItem('stared'))
     }
-    console.log(this.filitertodos.length)
   },
   watch:{
     /*對name值進行監聽，只要name改變了，就會觸發程式

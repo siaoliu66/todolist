@@ -28,6 +28,12 @@
     background-image: url(https://images.pexels.com/photos/2546943/pexels-photo-2546943.jpeg?auto=compress&cs=tinysrgb&w=600);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh;
+
+    @media screen and (max-width:768px) {
+      background-image: url(https://images.pexels.com/photos/8985189/pexels-photo-8985189.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    }
+    
     .top{
       display: flex;
       align-items: center;
@@ -89,6 +95,11 @@
     .blue-background-class{
       opacity: .5;
       background: #ec9bad;
+    }
+    .fixed{
+      .progress{
+        margin-top: 5px;
+      }
     }
   }
   

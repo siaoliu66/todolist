@@ -18,22 +18,25 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>    
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.3/Sortable.min.js"></script>
+
 </head>
 <body class="bg-lighter black">
+
     <div id="app">
-         
-        <div class="container">
+      
+        <div class="container ">
           <div class="top"></div>  
           <div class="input-group mb-3"  style="align-items: center;">
           <div class="input-group-prepend">
           </div>
-          <img src="./image/AS0004566_09.gif" alt="" style="width: 100px;">
-          <input type="text" class="form-control" placeholder="雖然事情很多，但慢慢做總是會做完的XD" v-model="newtodo" @keyup.enter="addTodo()">
+          <img src="./image/AS0004566_09.gif" alt="" style="width: 80px;">
+          <input type="text" class="form-control" placeholder="漂亮姊姊上班加油，趕快來安排今天要做的事情吧！！" v-model="newtodo" @keyup.enter="addTodo()">
           <div class="input-group-append"  style="height: 38px;">
             <button class="btn btn-dark" type="button" @click="addTodo()">新增</button>
           </div>
         </div>
-        <div class="card text-center bg-dark">
+        <div class="card text-center">
           <div class="card-header">
             <ul class="nav nav-tabs card-header-tabs">
               <li class="nav-item">
@@ -47,12 +50,12 @@
               </li>
             </ul>
           </div>
-          <ul class="list-group list-group-flush text-left">
+          <ul class="list-group list-group-flush text-left sortable1">
             <li class="list-group-item" v-for="(item,key) in filitertodos" @dblclick="edit(item)">
               <div class="d-flex" v-if="catchtodo.id != item.id">
                 <div class="form-check">
                   <input type="checkbox" class="form-check-input" :id="item.id" v-model="item.completed">
-                  <label class="form-check-label" :for="item.id" :class="{'completed':item.completed}"><span></span><p class="time"> {{item.time}} </p>
+                  <label class="form-check-label" :for="item.id" :class="{'completed':item.completed}"><span></span><p class="time badge badge-warning"> {{item.time}} </p>
                     {{item.title}}
                   </label>
                 </div>
@@ -68,13 +71,24 @@
             <a href="#" @click="clear()">清除所有任務</a>
           </div>
         </div>
+        <div class="fixed">
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"  aria-valuemin="0" aria-valuemax="100" :style="{width: barWidth}">{{barWidth}}</div>
+          </div>
+        </div>
         </div>    
-        
+
       </div>
-      <!-- <div class="fix">
-        <input type="checkbox" class="toggle">
-        </label>
-      </div> -->
+      
       <script src="todolist.js"></script>
+      
+      <script>
+        // 拖曳功能
+        var sortable1 = document.querySelector('.sortable1')
+        new Sortable(sortable1, {
+          animation: 150,
+          ghostClass: 'blue-background-class'
+      });
+      </script>
 </body>
 </html>

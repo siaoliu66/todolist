@@ -4,6 +4,10 @@
   color: gray;
 }
 
+#app {
+  padding: 10%;
+}
+
 body {
   width: 100%;
   font-family: "微軟正黑體";
@@ -22,79 +26,64 @@ body input[type=checkbox] + label p {
   margin: 10px;
 }
 
-.black {
-  background-position: center;
-  background-image: url(https://images.pexels.com/photos/2546943/pexels-photo-2546943.jpeg?auto=compress&cs=tinysrgb&w=600);
-  background-size: cover;
-  background-repeat: no-repeat;
+.contain {
+  background: linear-gradient(50deg, rgb(242, 242, 242) 0%, rgb(189, 181, 219) 50%, rgb(148, 187, 233) 100%);
   height: 100vh;
 }
 @media screen and (max-width: 768px) {
-  .black {
+  .contain {
     background-image: url(https://images.pexels.com/photos/8985189/pexels-photo-8985189.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
   }
 }
-.black .top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.contain .top {
+  text-align: center;
 }
-.black .top .user h1 {
-  font-size: 1.5em;
-  margin: 0 0 0 10px;
-  padding: 0;
-  width: 10em;
-  border-right: 0.05em solid;
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 3s steps(10), insert 1s steps(1) infinite;
-  color: #00CACA;
+.contain .top h1 {
+  font-weight: bolder;
+  letter-spacing: 0.3em;
 }
-.black .top .today {
+.contain .top .today {
   text-align: right;
   color: #00CACA;
   letter-spacing: 2px;
   font-size: 14px;
   padding-right: 10px;
 }
-.black .top .today p {
+.contain .top .today p {
   margin: 5px;
 }
-.black .form-check input[type=checkbox] {
+.contain .form-check input[type=checkbox] {
   display: none;
 }
-.black .form-check input[type=checkbox] + label span {
+.contain .form-check input[type=checkbox] + label span {
   display: inline-block;
   width: 30px;
   height: 30px;
   margin: 0 15px 0 0;
   vertical-align: middle;
-  background: url(./image/checkbox.png) left top no-repeat;
-  background-size: contain;
-  cursor: pointer;
-  background-position: center;
-}
-.black .form-check input[type=checkbox]:checked + label span {
-  background: url(./image/clickgif.gif) top no-repeat;
+  background: url(https://www.svgrepo.com/show/309415/checkbox-unchecked.svg) top no-repeat;
   background-size: cover;
+  cursor: pointer;
 }
-.black .normal, .black .sup {
+.contain .form-check input[type=checkbox]:checked + label span {
+  background: url(./image/check.svg) top no-repeat;
+  background-size: cover;
+  border: none;
+  border-radius: inherit;
+}
+.contain .normal, .contain .sup {
   color: white;
 }
-.black .card {
+.contain .card {
   opacity: 0.8;
 }
-.black .sortable1 .list-group-item {
+.contain .sortable1 .list-group-item {
   cursor: pointer;
 }
-.black .blue-background-class {
+.contain .blue-background-class {
   opacity: 0.5;
   background: #ec9bad;
 }
-.black .fixed .progress {
+.contain .fixed .progress {
   margin-top: 5px;
-}
-
-#app {
-  padding: 10px;
 }/*# sourceMappingURL=style.css.map */

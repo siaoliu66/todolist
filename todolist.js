@@ -53,7 +53,7 @@ localStorage.setItem('stared',JSON.stringify(this.storageArray))
       item.title = this.catchtitle
       this.catchtitle=''
       this.catchtodo = {}
- localStorage.setItem('stared',JSON.stringify(this.storageArray))
+      localStorage.setItem('stared',JSON.stringify(this.storageArray))
     },
     clear:function(){
       // this.todos = {}

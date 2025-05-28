@@ -7,7 +7,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
-    <title>萱の待辦事項</title>
+    <title>待辦事項</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -21,17 +21,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.3/Sortable.min.js"></script>
 
 </head>
-<body class="bg-lighter black">
+<body class="bg-lighter contain">
 
     <div id="app">
       
-        <div class="container ">
-          <div class="top"></div>  
+        <div class="container">
+          <div class="top"><h1>TODO LIST</h1></div>  
           <div class="input-group mb-3"  style="align-items: center;">
           <div class="input-group-prepend">
           </div>
-          <img src="./image/AS0004566_09.gif" alt="" style="width: 80px;">
-          <input type="text" class="form-control" placeholder="漂亮姊姊上班加油，趕快來安排今天要做的事情吧！！" v-model="newtodo" @keyup.enter="addTodo()">
+          <input type="text" class="form-control" placeholder="今天有甚麼安排呢?" v-model="newtodo" @keyup.enter="addTodo()">
           <div class="input-group-append"  style="height: 38px;">
             <button class="btn btn-dark" type="button" @click="addTodo()">新增</button>
           </div>
@@ -71,11 +70,7 @@
             <a href="#" @click="clear()">清除所有任務</a>
           </div>
         </div>
-        <div class="fixed">
-            <div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"  aria-valuemin="0" aria-valuemax="100" :style="{width: barWidth}">{{barWidth}}</div>
-          </div>
-        </div>
+
         </div>    
 
       </div>
@@ -87,7 +82,7 @@
         var sortable1 = document.querySelector('.sortable1')
         new Sortable(sortable1, {
           animation: 150,
-          ghostClass: 'blue-background-class'
+          // ghostClass: 'blue-background-class'
       });
       </script>
 </body>
